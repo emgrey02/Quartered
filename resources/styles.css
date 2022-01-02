@@ -1,0 +1,100 @@
+.background {
+  viewport-fill: black;
+}
+
+#clock-label {
+  font-size: 60;
+  font-family: Fabrikat-Bold;
+  text-anchor: middle;
+  text-length: 20;
+  x: 50%;
+  y: 50%+15;
+  fill: black;
+}
+
+.text {
+  font-size: 24;
+  font-family: Fabrikat-Regular;
+  text-anchor: end;
+  fill: white;
+}
+
+#battery-icon {
+  x: 76%;
+  y: 20;
+  width: 38;
+  height: 18;
+}
+
+#battery-level {
+  x: 4;
+  y: 4;
+  height: 10;
+  fill: green;
+}
+
+#battery-text {
+  x: 72%;
+  y: 38;
+}
+
+#hr-icon {
+  x: 86%;
+  y: 56;
+  width: 36;
+  height: 36;
+  fill: red;
+}
+
+#hr-text {
+  x: 83%;
+  y: 83;
+  fill: red;
+}
+
+#steps-text {
+  x: 82%;
+  y: 255;
+  text-length: 40;
+  fill: cyan;
+}
+
+#steps-icon {
+  x: 86%;
+  y: 230;
+  width: 36;
+  height: 36;
+  fill: cyan;
+}
+
+#floors-text {
+  x: 68%;
+  y: 305;
+  fill: green;
+}
+
+#floors-icon {
+  x: 72%;
+  y: 280;
+  width: 36;
+  height: 36;
+  fill: green;
+}
+
+#day-of-week {
+  x: 80;
+  y: 70;
+  text-length: 80;
+  text-anchor: middle;
+  font-size: 42;
+}
+
+#date {
+  x: 80;
+  y: 275;
+  text-length: 80;
+  text-anchor: middle;
+  font-size: 42;
+}
+
+

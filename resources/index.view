@@ -1,0 +1,36 @@
+<svg class="background">
+  <mask id="mask">
+    <rect x="45" y="110" width="250" height="100" />
+    <rect x="50%" y="0" width="10" height="100" />
+    <rect x="50%" y="220" width="10" height="200" />
+    <rect x="90%" y="50%" width="50" height="10" />
+    <rect x="0" y="50%" width="37" height="10" />
+  </mask>
+  <svg mask="#mask" width="100%" height="100%">
+    <gradientRect id="gradient" width="100%" height="100%"
+      gradient-type="linear"
+      gradient-x1="0" gradient-y1="50"
+      gradient-x2="0" gradient-y2="100%-50"
+      gradient-color1="cyan" gradient-color2="purple" />
+  </svg>
+  
+  <text id="clock-label">00:00:00</text>
+  
+  <image id="battery-icon" href="icons/battery.png">
+    <rect id="battery-level" />
+  </image>
+  <text id="battery-text" class="text" />
+  
+  <image id="hr-icon" href="icons/heart.png" />
+  <text id="hr-text" class="text">--</text>
+  
+  <image id="steps-icon" href="icons/steps.png" />
+  <text id="steps-text" class="text">--</text>
+  
+  <image id="floors-icon" href="icons/floors.png" />
+  <text id="floors-text" class="text">--</text>
+  
+  <text id="day-of-week" class="text">--</text>
+  <text id="date" class="text">--</text>
+  
+</svg>

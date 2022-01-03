@@ -3,17 +3,17 @@
 }
 
 #clock-label {
-  font-size: 60;
+  font-size: 70;
   font-family: Fabrikat-Bold;
   text-anchor: middle;
   text-length: 20;
   x: 50%;
-  y: 50%+15;
+  y: 50%+26;
   fill: black;
 }
 
 .text {
-  font-size: 24;
+  font-size: 32;
   font-family: Fabrikat-Regular;
   text-anchor: end;
   fill: white;
@@ -34,13 +34,13 @@
 }
 
 #battery-text {
-  x: 72%;
-  y: 38;
+  x: 74%;
+  y: 40;
 }
 
 #hr-icon {
   x: 86%;
-  y: 56;
+  y: 66;
   width: 36;
   height: 36;
   fill: red;
@@ -48,13 +48,13 @@
 
 #hr-text {
   x: 83%;
-  y: 83;
+  y: 95;
   fill: red;
 }
 
 #steps-text {
   x: 82%;
-  y: 255;
+  y: 258;
   text-length: 40;
   fill: cyan;
 }
@@ -68,14 +68,14 @@
 }
 
 #floors-text {
-  x: 68%;
-  y: 305;
+  x: 70%;
+  y: 320;
   fill: green;
 }
 
 #floors-icon {
   x: 72%;
-  y: 280;
+  y: 290;
   width: 36;
   height: 36;
   fill: green;

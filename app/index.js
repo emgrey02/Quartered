@@ -44,7 +44,13 @@ if (HeartRateSensor && appbit.permissions.granted("access_heart_rate")) {
 clock.granularity = "seconds";
 clock.ontick = (evt) => {
   let today = evt.date;
-  let hours = today.getHours() % 12;
+  
+  if (preferences.clockDisplay === '12h') {
+    let hours = today.getHours() % 12;
+  } else {
+    let hours = today.getHours();
+  }
+  
   if (hours < 10) {
     hours = `0${hours}`;
   }

@@ -3,8 +3,8 @@ by Emma Grey
 
 ### for Fitbit Versa 3 or Fitbit Sense
 
-![Simple-Clockface-screenshot](https://user-images.githubusercontent.com/62446436/147865342-621e0e50-8d92-49c0-9931-6da0d6752771.png)
-![Simple-Clockface-screenshot-1](https://user-images.githubusercontent.com/62446436/147865367-5b88263b-45eb-4d2d-922f-30baadd2e549.png)
+![Quartered-screenshot-1](https://user-images.githubusercontent.com/62446436/147894533-b1976cb8-e164-4005-a2c7-e8196ad01e62.png)
+![Quartered-screenshot-5](https://user-images.githubusercontent.com/62446436/147894545-2c5838e4-a9b7-41f7-aa33-c4d224bf26f6.png)
 
 ## Description
 Quartered: simple digital clock-face with a customizable color gradient and some useful stats.

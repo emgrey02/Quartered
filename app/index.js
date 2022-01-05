@@ -24,11 +24,6 @@ const date = document.getElementById("date");
 const dayOfWeek = document.getElementById("day-of-week");
 const gradientRect = document.getElementById('gradient');
 
-if (appbit.permissions.granted("access_activity")) {
-  stepsText.text = today.adjusted.steps;
-  floorsText.text = today.adjusted.elevationGain;
-}
-
 if (HeartRateSensor && appbit.permissions.granted("access_heart_rate")) {
   const hrm = new HeartRateSensor();
   hrm.addEventListener("reading", () => {
@@ -73,11 +68,20 @@ clock.ontick = (evt) => {
   
   date.text = `${month} ${day}`;
   dayOfWeek.text = `${theDay}`;
+  
+  updateStats();
 }
 
-
-batteryLevel.width = Math.floor(battery.chargeLevel * 26 / 100);
-
+function updateStats() {
+    /************* STEPS/FLOORS/BATTERY *****************/
+  
+  if (appbit.permissions.granted("access_activity")) {
+    stepsText.text = today.adjusted.steps;
+    floorsText.text = today.adjusted.elevationGain;
+  }
+  
+  batteryLevel.width = Math.floor(battery.chargeLevel * 26 / 100);
+}
 
 /* --------------------------------------- SETTINGS --------------------------------------------- */
 function settingsCallback(data) {
@@ -96,5 +100,9 @@ function settingsCallback(data) {
   if (!data.hideBat) {
     batteryText.text = Math.floor(battery.chargeLevel) + '%';
   }
+  if (data.textColor) {
+    clockLabel.style.fill = data.textColor;
+  }
 }
+
 settings.initialize(settingsCallback);

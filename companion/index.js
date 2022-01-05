@@ -13,6 +13,7 @@ if (companion.launchReasons.settingsChanged) {
   sendValue("colorOne", settingsStorage.getItem("first-color"));
   sendValue("colorTwo", settingsStorage.getItem("second-color"));
   sendValue("hideBat", settingsStorage.getItem("hideBat"));
+  sendValue('textColor', settingsStorage.getItem('textColor'));
 }
 
 function sendValue(key, val) {

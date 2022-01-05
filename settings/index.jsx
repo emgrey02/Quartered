@@ -11,25 +11,52 @@ function settings(props) {
         <ColorSelect
           settingsKey="colorOne"
           colors={[
-            {color: 'cyan'},
-            {color: 'tomato'},
-            {color: 'gold'},
-            {color: 'aquamarine'},
+            {color: 'cadetblue'},
+            {color: 'coral'},
+            {color: 'darkred'},
+            {color: 'darkslateblue'},
             {color: 'plum'},
-            {color: 'orange'},
-            {color: 'green'}
+            {color: 'gold'},
+            {color: 'forestgreen'},
+            {color: 'lavender'},
+            {color: 'lightcyan'},
+            {color: 'lightpink'},
+            {color: 'lightseagreen'},
+            {color: 'yellow'},
+            {color: 'mediumaquamarine'},
+            {color: 'orangered'},
+            {color: 'rebeccapurple'},
+            {color: 'saddlebrown'}
           ]}
         />
         <ColorSelect
           settingsKey="colorTwo"
           colors={[
-            {color: 'purple'},
-            {color: 'tomato'},
-            {color: 'gold'},
-            {color: 'aquamarine'},
+            {color: 'cadetblue'},
+            {color: 'coral'},
+            {color: 'darkred'},
+            {color: 'darkslateblue'},
             {color: 'plum'},
-            {color: 'orange'},
-            {color: 'green'}
+            {color: 'gold'},
+            {color: 'forestgreen'},
+            {color: 'lavender'},
+            {color: 'lightcyan'},
+            {color: 'lightpink'},
+            {color: 'lightseagreen'},
+            {color: 'yellow'},
+            {color: 'mediumaquamarine'},
+            {color: 'orangered'},
+            {color: 'rebeccapurple'},
+            {color: 'saddlebrown'}
+          ]}
+        />
+      </Section>
+      <Section title={<Text bold>Clock text color</Text>}>
+        <ColorSelect
+          settingsKey="textColor"
+          colors={[
+            {color: 'black'},
+            {color: 'white'}
           ]}
         />
       </Section>

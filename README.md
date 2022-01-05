@@ -12,3 +12,6 @@ Quartered: simple digital clock-face with a customizable color gradient and some
 - stats included: battery life, heart rate, step count, floor count
 
 - settings: gradient colors, battery life percentage
+
+## Link
+[Fitbit Gallery](https://gallery.fitbit.com/details/0305b1ad-fced-44b9-a2bf-34e6d2851515)

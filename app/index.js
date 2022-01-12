@@ -81,6 +81,7 @@ function updateStats() {
   }
   
   batteryLevel.width = Math.floor(battery.chargeLevel * 26 / 100);
+  batteryText.text = Math.floor(battery.chargeLevel) + '%';
 }
 
 /* --------------------------------------- SETTINGS --------------------------------------------- */
@@ -95,10 +96,10 @@ function settingsCallback(data) {
     gradientRect.gradient.colors.c2 = data.colorTwo;
   }
   if (data.hideBat) {
-    batteryText.text = "";
+    batteryText.style.display = "none";
   } 
   if (!data.hideBat) {
-    batteryText.text = Math.floor(battery.chargeLevel) + '%';
+    batteryText.style.display = 'inherit';
   }
   if (data.textColor) {
     clockLabel.style.fill = data.textColor;

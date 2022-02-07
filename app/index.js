@@ -41,7 +41,7 @@ clock.ontick = (evt) => {
   let today = evt.date;
   
   if (preferences.clockDisplay === '12h') {
-    let hours = today.getHours() % 12;
+    let hours = today.getHours() % 12 || 12;
   } else {
     let hours = today.getHours();
   }
